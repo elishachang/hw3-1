@@ -1,0 +1,132 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*PC版本*/
+.sociallink{
+    max-width: 984px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+    background: #ececec;
+}
+.sociallink a:hover{color: red;}
+.header{
+    max-width: 984px;
+    margin: 0 auto;
+    padding-top:  0.5%;
+    padding-bottom:  0.5%;
+    margin-bottom: 0.5%;
+}
+.header ul{
+    float: right;
+    padding: 1%;
+}
+.header li{
+    float: right;
+    margin-left: 10px;
+    color: green;
+}
+.header li a:hover{color: orange;}
+.content{
+    max-width: 974px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+}
+.box{
+    width: 33%;
+    height: 3%;
+    margin-right: 3%;
+    text-align: center;
+    box-shadow: 2px 2px 6px #bebebe;
+    padding-top: 10px;
+}
+.box p{
+    font-size: 20px;
+    margin: 8px;
+    font-weight: bold;
+}
+.text{
+    padding: 8px;
+    display: block;
+    text-align: left;
+    line-height: normal;
+}
+.text ul{margin-left: 40px;}
+.text li{list-style: disc;}
+
+
+@media(max-width:767px){
+    /*- 表頭選單在 767px 後變成 2*2 選單排列。*/
+    .header img{
+        display: block;
+        margin: 0 auto;
+    }
+    .header ul{
+        float: none;
+        margin-bottom: 5%;
+    }
+    .header li{
+        margin: 0 auto;
+        background: rgb(209, 243, 241);
+        border-radius: 2px;
+        width: 46%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 1%;
+        text-align: center;
+    }
+    /*- 課程列表在 1000px 以下時也能自適應，767px 後變成單欄式排版。*/
+    .content{
+        margin-top: 10px;
+        display: block;
+    }
+    .box{
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 10%;
+    }
+}
